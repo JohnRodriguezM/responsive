@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+   
+    font-size: 62.5%;
+}
+
+body{
+   
+    background-image: url(./images/background.png);
+}
+
+
+/*este es el primer contenedor flex del programa*/ /* El uso de flex es valioso para sitios con diseño responsive*/
+.flex{
+   
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    
+}
+.li_flex_hijo_flex{
+    
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    margin: 5px;
+    border: 2px solid blue;
+    background-color:  #198FCB;
+
+}
+
+
