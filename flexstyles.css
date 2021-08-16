@@ -1,3 +1,5 @@
+$color:#107DD8;
+
 *{
     margin:0;
     padding: 0;
@@ -7,33 +9,55 @@
 html{
    
     font-size: 62.5%;
+    max-width: 90%;
+    height: 4000px;
+    margin: 0 auto;
+    border: 1px solid brown;
+
 }
 
 body{
    
     background-image: url(./images/background.png);
+   
 }
 
 
 /*este es el primer contenedor flex del programa*/ /* El uso de flex es valioso para sitios con diseño responsive*/
-.flex{
-   
-    display: flex;
-    margin: 10px;
-    justify-content: flex-end;
+/* el contenedor del flex siempre debe ser el padre*/
+
+.navaa{
+    background-color:color;
+    opacity: 0.8;
+    position: fixed;
+     width:89.8%;
+    display:flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-
     
+    /* se le asigna tamaño de letra al h1*/
 }
+nav > h1{
+    font-size:2rem;
+}
+
+/* vuelvo y repito el FLEX y su uso debedarse en el contenedor principal, en contenedores secundarios, no hay un problema real con lo demas atributos*/
 .li_flex_hijo_flex{
+    font-size: 2rem;
+    padding:7px;
+    background-color:#0692F9;
+    height:35px;
+    display:inline-block;
     
-    width: 150px;
-    height: 50px;
-    list-style: none;
-    margin: 5px;
-    border: 2px solid blue;
-    background-color:  #198FCB;
-
+    
+   
 }
-
+img{
+    width:100px;
+    height:100px;
+    border-radius: 40px;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;
+}
 
