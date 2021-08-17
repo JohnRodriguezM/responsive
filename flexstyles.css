@@ -1,12 +1,17 @@
 /*INICIO PROYECTO CSS-------*/
+/*column-count: 2;
+column-gap: 15px;
+text-shadow: 0rem 0rem 5rem blue;  /*estas dos propuiades muy utiles para decoracion*/
 
+/*diseño general - para todas las pantallas ------- */
 *{margin:0;padding: 0;box-sizing: border-box;}
 html{font-size: 62.5%;max-width: 90%;height: 4000px;margin: 0 auto;border: 1px solid brown;}
 body{background-image: url(./images/background.png);}
 
 /*este es el primer contenedor flex del programa*/ /* El uso de flex es valioso para sitios con diseño responsive------*/
 /* el contenedor del flex siempre debe ser el padre------*/
-/* flex-containers ---- flex-items ------*/
+/* flex-containers ---- flex-items ------
+
 .navaa{
 background-color:#107DD8;
 opacity: 0.8;
@@ -18,12 +23,12 @@ align-items: center;
 justify-content: space-between;
 flex-wrap: wrap;
 }
-/* se le asigna tamaño de letra al h1--------*/
+/* se le asigna tamaño de letra al h1--------
 nav > h1{
 font-size:3.2rem;
 box-shadow: 10px 10px 3px 3px #0e62ed;
 }
-/* el FLEXBOX y su uso debedarse en el contenedor principal, en contenedores secundarios, no hay un problema real con lo demas atributos------*/
+/* el FLEXBOX y su uso debedarse en el contenedor principal, en contenedores secundarios, no hay un problema real con lo demas atributos------
 .li_flex_hijo_flex{
 font-size: 2rem;
 padding:7px;
@@ -32,21 +37,21 @@ height:35px;
 display:inline-block;
 }
 
-/*aplicacion pseudo: para li------*/ 
+/*aplicacion pseudo: para li------
 .li_flex_hijo_flex:hover
 {
 color:azure;
 height: 37px;
 }
 
-/*se integra img principal (logo)-------*/
+/*se integra img principal (logo)-------
 .img_principal{
 width:100px;
 height:100px;
 border-radius: 40px;
 box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;
 }
-/*se integra imagen secundaria (detras de la principal)-------*/
+/*se integra imagen secundaria (detras de la principal)-------
 .img_alternativa{
 width:100px;
 height:100px;
@@ -60,56 +65,127 @@ opacity: 0;
 opacity:1;
 }
 
+
 /*-----*/ /*---------*/ /*-------------*/ /*---------------------*/ /*-------------*/ /*-------------*/ 
-/*diseño resposive header para dispositivos inferiores a 500px */
+/*DISEÑO PARA DISPOSITIVOS INFERIORES A 375 PX*/  /*diseño mobile fisrt*/
 
-@media (max-width:460px ){
-    .navaa{justify-content:center;align-items: center;}
-    
-    .flex{margin-top: 50px;}
-    
+@media (max-width:375px )
+{ 
+/*contenedor padre el cual debe llevar el display flex*/
+
+    .navaa
+        {display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.75;height:370px;}
+
+/*se aplican diseños a la imagen (parte logo principal) */
+
+    .img_principal
+        {position: relative; margin-left: 25%;margin-top: 5px; width:75px; height:75px;border-radius: 40px;box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;}
+
+/*Se aplican diseños a la imagene (parte logo anterior (0 visibilidad inicial :hover = 1;)*/
+
+    .img_alternativa
+        {position:relative;margin-left: 25%;margin-top: -80px;margin-bottom: 7.5%;width:75px;height:75px;border-radius: 40px;
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;opacity: 0;}
+    .img_alternativa:hover{opacity:1;}
+
+/*se interviene el titulo principal (oficinas legales) --- :hover (change color)*/
+
+    nav > h1
+        {margin-top: -30px;font-size:3rem;text-shadow: 2px 2px 10px #001863;}
+    nav > h1:hover{color:blue;}
+
+/*.flex is the ul container > li */
+    .flex{margin-top: 12px;}
+
+/*se aplican styles a los li into ul(.flex) ---se declara id único en html para position, :hover(color:whitesmoke)*/
+
+    .li_flex_hijo_flex
+        {font-size: 2rem;padding:7px;background-color:#0692F9;height:35px;display:inline-block;}
+        
     #l1{margin-left: 28%;}#l2{margin-left: 0%;}#l3{margin-left: 6%}#l4,#l6{margin-left:8%; }#l5{margin-left:13%;}
+    #l1:active, #l2:active, #l3:active , #l4:active, #l5:active ,#l6:active {color:whitesmoke;}
 
-   .img_principal{position: relative;margin-left: 25%;}
+/*se aplican estilos al contenedor flex del aside*/
 
-   .img_alternativa{position:relative;margin-left: 76%;margin-top:-110px;margin-bottom: 5%;}
+    .flex_figure
+        {display:flex;flex-wrap: wrap;align-items: center;justify-content:center;}
 
-   .img_alternativa:hover{opacity: 1;}
-
-}
-/*TO DO --- diseño pantallas mas grandes en header */
-
-
-
-
-/* inicio desarrollo barra lateral para dispositivos menores de 460px*/
-@media(max-width:460px){
-    .flex_figure{
-        display:flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content:center;
-        
-       
+/*se aplican estilos a las imagenes del aside (leyes) ------------------*/       
     
-       
-    }
-    .img_legal{
-        width:30%;
-        padding:1px;
-        position:relative; top: 480px;
-        z-index: -1;
-    }
+    .img_legal
+        {width:30%;padding:1px;position:relative; top: 50px;z-index: -1;}
 
-    .parrafo_leyes1{
-        position: absolute; top:550px; left:10%;
-        text-align: center;
+/*se aplican estilo a los parrafos (titulos de las leyes)*/   
+
+    .parrafo_leyes1
+        {position: absolute; top:450px; left:10.2%;text-align: center; font-size: 1.2rem;width:25%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-        font-size: .95rem;
-        width:25%
-    }
+        } 
+    .parrafo_leyes2
+        {position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    .parrafo_leyes3
+        {position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%; left:64.2%; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    .parrafo_leyes4
+        {position: absolute; top:580px; max-width: 115%; text-align: center;left:10.2%; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    .parrafo_leyes5
+        {position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    .parrafo_leyes6
+        {position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%; left: 64.2%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+/*aplicacion de estilo al elemento ancala (a) */
+        .ap:active{box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #aaa;}
+
+/*---------------------------*/
+/*aplicacion estilos main_content*/
+
+        .container_flex_main{ 
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        .h1_hijo_main{
+            text-align: center;
+            margin-top: 30px;
+            border: 2.5px dotted #0692F9;
+            border-radius: 20px;
+            box-shadow:inset 0 0 20px 0 #2C14FF;
+           
+        }
+       .p_hijo_main{
+           width:90%;
+           margin-top: 20px;
+           margin-left: 5%;
+           text-align: center;
+           font-size:1.35rem;
+           column-count: 2;
+            column-gap: 15px;
+            text-shadow: 0rem 0rem 5rem blue;
+           
+       }
+
+
 }
+
+/*-------------------
+
+
+    
+
 
 
 
