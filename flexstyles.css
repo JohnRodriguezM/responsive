@@ -1,7 +1,8 @@
 /*INICIO PROYECTO CSS-------*/
-/*column-count: 2;
+/*column-count: 2; /* crea columnas 
 column-gap: 15px;
-text-shadow: 0rem 0rem 5rem blue;  /*estas dos propuiades muy utiles para decoracion*/
+text-shadow: 0rem 0rem 5rem blue;  /*estas dos propiedades muy utiles para decoracion*/
+/*transform: scale(1) rotate(180deg) skewX(5deg);} /*permite girar los items, incluso hacerlos crecer sin width
 
 /*diseño general - para todas las pantallas ------- */
 *{margin:0;padding: 0;box-sizing: border-box;}
@@ -70,11 +71,10 @@ opacity:1;
 /*DISEÑO PARA DISPOSITIVOS INFERIORES A 375 PX*/  /*diseño mobile fisrt*/
 
 @media (max-width:375px )
-{ 
+{ html{height:2600px;}
 /*contenedor padre el cual debe llevar el display flex*/
 
-    .navaa
-        {display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.75;height:370px;}
+    .navaa{display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.75;height:370px;}
 
 /*se aplican diseños a la imagen (parte logo principal) */
 
@@ -90,8 +90,7 @@ opacity:1;
 
 /*se interviene el titulo principal (oficinas legales) --- :hover (change color)*/
 
-    nav > h1
-        {margin-top: -30px;font-size:3rem;text-shadow: 2px 2px 10px #001863;}
+    nav > h1{margin-top: -30px;font-size:3rem;text-shadow: 2px 2px 10px #001863;}
     nav > h1:hover{color:blue;}
 
 /*.flex is the ul container > li */
@@ -99,52 +98,38 @@ opacity:1;
 
 /*se aplican styles a los li into ul(.flex) ---se declara id único en html para position, :hover(color:whitesmoke)*/
 
-    .li_flex_hijo_flex
-        {font-size: 2rem;padding:7px;background-color:#0692F9;height:35px;display:inline-block;}
+    .li_flex_hijo_flex{font-size: 2rem;padding:7px;background-color:#0692F9;height:35px;display:inline-block;}
         
     #l1{margin-left: 28%;}#l2{margin-left: 0%;}#l3{margin-left: 6%}#l4,#l6{margin-left:8%; }#l5{margin-left:13%;}
     #l1:active, #l2:active, #l3:active , #l4:active, #l5:active ,#l6:active {color:whitesmoke;}
 
 /*se aplican estilos al contenedor flex del aside*/
 
-    .flex_figure
-        {display:flex;flex-wrap: wrap;align-items: center;justify-content:center;}
+    .flex_figure{display:flex;flex-wrap: wrap;align-items: center;justify-content:center;}
 
 /*se aplican estilos a las imagenes del aside (leyes) ------------------*/       
     
-    .img_legal
-        {width:30%;padding:1px;position:relative; top: 50px;z-index: -1;}
+    .img_legal{width:30%;padding:1px;position:relative; top: 50px;z-index: -1;}
 
 /*se aplican estilo a los parrafos (titulos de las leyes)*/   
 
-    .parrafo_leyes1
-        {position: absolute; top:450px; left:10.2%;text-align: center; font-size: 1.2rem;width:25%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        } 
-    .parrafo_leyes2
-        {position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    .parrafo_leyes1{position: absolute; top:450px; left:10.2%;text-align: center; font-size: 1.2rem;width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;} 
 
-    .parrafo_leyes3
-        {position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%; left:64.2%; 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    .parrafo_leyes2{position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes4
-        {position: absolute; top:580px; max-width: 115%; text-align: center;left:10.2%; font-size:1.2rem; width:25%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    .parrafo_leyes3{position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%; left:64.2%; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes5
-        {position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    .parrafo_leyes4{position: absolute; top:580px; max-width: 115%; text-align: center;left:10.2%; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes6
-        {position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%; left: 64.2%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+    .parrafo_leyes5{position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+    .parrafo_leyes6{position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%; left: 64.2%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 /*aplicacion de estilo al elemento ancala (a) */
         .ap:active{box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #aaa;}
@@ -152,31 +137,56 @@ opacity:1;
 /*---------------------------*/
 /*aplicacion estilos main_content*/
 
-        .container_flex_main{ 
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            
-        }
-        .h1_hijo_main{
-            text-align: center;
-            margin-top: 30px;
-            border: 2.5px dotted #0692F9;
-            border-radius: 20px;
-            box-shadow:inset 0 0 20px 0 #2C14FF;
-           
-        }
-       .p_hijo_main{
-           width:90%;
-           margin-top: 20px;
-           margin-left: 5%;
-           text-align: center;
-           font-size:1.35rem;
-           column-count: 2;
-            column-gap: 15px;
-            text-shadow: 0rem 0rem 5rem blue;
-           
-       }
+/*se aplican los estilos al flex container del main*/
+
+    .container_flex_main{display: flex; flex-wrap: wrap;flex-direction: row;}
+
+/*se agregan estilo al h1 (MUÑOZ &)*/
+
+    .h1_hijo_main{text-align: center;margin-top: 30px;border: 2.5px dotted #0692F9;border-radius: 20px;box-shadow:inset 0 0 20px 0 #2C14FF;}
+
+/*se aplican estilos a p_main*/
+
+    .p_hijo_main{width:90%;margin-top: 20px;margin-left: 5%;text-align: center;font-size:1.35rem;column-count: 2;column-gap: 10px;text-shadow: 0rem 0rem 5rem blue;}
+
+    .imagen_muñoz_y, .img_muñoz2_y{margin-top: 20px;margin-left: 15%;width: 70%;}
+
+    .imagen_muñoz_y:active, .img_muñoz2_y:active{opacity: 0;}
+
+    .h1_hijo2_main{text-align: center;margin-top: 30px;border: 2.5px dotted #0692F9;border-radius: 20px;box-shadow:inset 0 0 20px 0 #2C14FF;}
+
+    .p_hijo2_main{width:90%;margin-top: 20px;margin-left: 5%;text-align: center;font-size:1.35rem; text-align: justify; text-shadow: 0rem 0rem 5rem blue;}
+
+    
+/*inicio estilos footer*/
+
+    .container_flex_footer{display:flex;background-color: #107DD8;flex-wrap: nowrap;opacity: 0.8;margin-top: 38px;width:100%;height:500px; justify-content: center;}
+
+    .hijo1_h1_footer{
+        position:relative;
+        margin-top: 20px;
+       text-align: center;
+       font-size: 2rem;
+       text-shadow: 0rem 0rem 0.3rem blue;
+        
+    }
+
+    .comentariosss{
+        position: relative;
+        margin-top: 35px;
+        margin-left: 5%;
+        width:90%;
+        height:70px;
+        border:3px solid black;
+    }
+    .boton{
+        position:relative;
+        margin-top:2px;
+        margin-left: 60%;
+        border: 3px solid black;
+    }.boton:active{
+        border:3px solid blue;
+    }
 
 
 }
