@@ -70,7 +70,7 @@ opacity:1;
 /*-----*/ /*---------*/ /*-------------*/ /*---------------------*/ /*-------------*/ /*-------------*/ 
 /*DISEÑO PARA DISPOSITIVOS INFERIORES A 425 PX (275-425)*/  /*mobile fisrt*/
 
-@media (max-width:768px )
+@media (max-width:450px )
 { html{height:2450px;}
 /*contenedor padre el cual debe llevar el display flex*/
 
@@ -109,7 +109,7 @@ opacity:1;
 
 /*se aplican estilos a las imagenes del aside (leyes) ------------------*/       
     
-    .img_legal{width:30%;padding:1px;position:relative; top: 50px;z-index: -1; height: 140px;}
+    .img_legal{width:30%;padding:1px;position:relative; top: 50px;z-index: -1; height: 150px;}
 
 /*se aplican estilo a los parrafos (titulos de las leyes)*/   
 
@@ -122,13 +122,13 @@ opacity:1;
     .parrafo_leyes3{position: absolute; top:450px; text-align: center; font-size:1.2rem; width:25%; left:64.2%; 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes4{position: absolute; top:580px; max-width: 115%; text-align: center;left:10.2%; font-size:1.2rem; width:25%;
+    .parrafo_leyes4{position: absolute; top:600px; max-width: 115%; text-align: center;left:10.2%; font-size:1.2rem; width:25%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes5{position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%;
+    .parrafo_leyes5{position: absolute; top:600px; text-align: center; font-size:1.2rem; width:25%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-    .parrafo_leyes6{position: absolute; top:580px; text-align: center; font-size:1.2rem; width:25%; left: 64.2%;
+    .parrafo_leyes6{position: absolute; top:600px; text-align: center; font-size:1.2rem; width:25%; left: 64.2%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 /*aplicacion de estilo al elemento ancala (a) */
