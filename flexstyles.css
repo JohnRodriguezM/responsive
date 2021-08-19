@@ -68,10 +68,10 @@ opacity:1;
 
 
 /*-----*/ /*---------*/ /*-------------*/ /*---------------------*/ /*-------------*/ /*-------------*/ 
-/*DISEÑO PARA DISPOSITIVOS INFERIORES A 425 PX (275-425)*/  /*mobile fisrt*/
+/*DISEÑO PARA DISPOSITIVOS INFERIORES A 425 PX (300-450)*/  /*mobile fisrt*/
 
-@media (max-width:450px )
-{ html{height:2450px;}
+
+html{height:2450px;}
 /*contenedor padre el cual debe llevar el display flex*/
 
     .navaa{display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.75;height:370px;}
@@ -79,18 +79,18 @@ opacity:1;
 /*se aplican diseños a la imagen (parte logo principal) */
 
     .img_principal
-        {position: relative; margin-left: 25%;margin-top: 5px; width:75px; height:75px;border-radius: 40px;box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;}
+        {position: relative; margin-left: 25%;margin-top: 7.5px; width:85px; height:85px;border-radius: 40px;box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;}
 
 /*Se aplican diseños a la imagene (parte logo anterior (0 visibilidad inicial :hover = 1;)*/
 
     .img_alternativa
-        {position:relative;margin-left: 25%;margin-top: -80px;margin-bottom: 7.5%;width:75px;height:75px;border-radius: 40px;
+        {position:relative;margin-left: 25%;margin-top: -87px;margin-bottom: 7.5%;width:85px;height:85px;border-radius: 40px;
         box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem blue;opacity: 0;}
     .img_alternativa:hover{opacity:1;}
 
 /*se interviene el titulo principal (oficinas legales) --- :hover (change color)*/
 
-    nav > h1{margin-top: -30px;font-size:3.3rem;text-shadow: 2px 2px 10px #001863;}
+    nav > h1{margin-top: -30px;font-size:3.8rem;text-shadow: 2px 2px 10px #001863;}
     nav > h1:hover{color:blue;}
 
 /*.flex is the ul container > li */
@@ -98,10 +98,12 @@ opacity:1;
 
 /*se aplican styles a los li into ul(.flex) ---se declara id único en html para position, :hover(color:whitesmoke)*/
 
-    .li_flex_hijo_flex{font-size: 2rem;padding:7px;background-color:#0692F9;height:35px;display:inline-block;}
+    .li_flex_hijo_flex{font-size: 2rem;padding:6px;background-color:#0692F9;height:35px;list-style-type: none;}
         
-    #l1{margin-left: 28%;}#l2{margin-left: 0%;}#l3{margin-left: 6%}#l4,#l6{margin-left:8%; }#l5{margin-left:13%;}
-    #l1:active, #l2:active, #l3:active , #l4:active, #l5:active ,#l6:active {color:whitesmoke;}
+    #l1{margin-left: 28%; width: 45%;}#l2{margin-left: 0%;}#l3{margin-left: 6%;width: 89%;}#l4,#l6{margin-left:8%; }#l5{margin-left:13%;width: 75%;}
+    #l1:active, #l2:active, #l3:active , #l4:active, #l5:active ,#l6:active {color:whitesmoke;}#l4{width: 84.5%;}#l6{width: 85%;}
+
+   
 
 /*se aplican estilos al contenedor flex del aside*/
 
@@ -173,7 +175,7 @@ opacity:1;
 
  
     /*Fin diseño pagina en pantallas max-width 425px*/
-}
+
 
 /*-------------------*/
 /*TO DO pantallas de mas de 425px*/
