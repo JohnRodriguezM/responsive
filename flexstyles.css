@@ -98,7 +98,7 @@ html{height:2450px;}
 
 /*se aplican styles a los li into ul(.flex) ---se declara id único en html para position, :hover(color:whitesmoke)*/
 
-    .li_flex_hijo_flex{font-size: 2rem;padding:6px;background-color:#0692F9;height:35px;list-style-type: none;}
+    .li_flex_hijo_flex{font-size: 2rem;padding:6px;background-color:#0692F9;height:35px;list-style-type: none;border-left: 1px solid #001863; border-right: 1px solid #001863;}
         
     #l1{margin-left: 28%; width: 45%;}#l2{margin-left: 0%;}#l3{margin-left: 6%;width: 89%;}#l4,#l6{margin-left:8%; }#l5{margin-left:13%;width: 75%;}
     #l1:active, #l2:active, #l3:active , #l4:active, #l5:active ,#l6:active {color:whitesmoke;}#l4{width: 84.5%;}#l6{width: 85%;}
