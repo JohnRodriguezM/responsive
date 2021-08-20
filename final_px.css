@@ -1,11 +1,46 @@
+html{border:0px;}
+
+
 .container_final{
-    max-width:1000px;
-    margin: 180px auto 0px ;
+    max-width:90%;
+    margin:  180px auto ;
 }
 .navaa{
-    background-color: violet;
-    max-width: 100%;
-    height:150px;
+    margin: 0 auto;
+    max-width: 90%;
+    height:135px;
     position: fixed;
     margin-top: -180px;
 }
+
+
+.img_principal{ width: 100px;height: 100px;}
+.img_alternativa{width: 100px; height: 100px;}
+
+nav>h1{margin-top:-15px; font-size: 3.8rem;}
+
+.flex{width: 750px;}
+
+#l1{width: 60px;margin-left: 155px; margin-top: -30px;}
+#l2{width: 125px;margin-left: 225px;}
+#l3{width:105px;margin-left: 355px;}
+#l4{width: 105px;margin-left: 473px;}
+#l5{width: 90px; margin-left:590px ; margin-top: -35px;}
+#l6{width: 100px;margin-left: 690px; margin-top: -35px;}
+
+.flex_figure{max-width: 700px;}
+.img_legal{height: 155px;}
+
+.parrafo_leyes2,.parrafo_leyes3,.parrafo_leyes4,.parrafo_leyes5,.parrafo_leyes6 {font-size: 1.3rem; width: 11%; height: 155px; }
+.parrafo_leyes1{left:13.6%; top:290px;font-size: 1.2rem;width: 8%;height: 155px;}
+.parrafo_leyes2{left: 22.25%;top:290px;}
+.parrafo_leyes3{left: 34%;top:290px; width: 8%;}
+.parrafo_leyes4{left:12.3%;top: 515px;}
+.parrafo_leyes5{left: 23.6%;top: 515px; width: 8%;}
+.parrafo_leyes6{left: 33.6%;top:515px;width: 8%;}
+
+.h1_hijo_main{font-size: 2.4rem;}
+
+.p_hijo_main{font-size: 1.75rem;}
+
+.p_hijo2_main{font-size: 1.75rem;}

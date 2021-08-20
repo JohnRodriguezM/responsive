@@ -74,7 +74,7 @@ opacity:1;
 html{height:2450px;}
 /*contenedor padre el cual debe llevar el display flex*/
 
-    .navaa{display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.75;height:370px;}
+    .navaa{display:flex;justify-content:center;flex-wrap: wrap;align-items: center;background-color:#107DD8;opacity: 0.9;height:370px;}
 
 /*se aplican diseños a la imagen (parte logo principal) */
 
